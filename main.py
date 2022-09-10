@@ -22,7 +22,7 @@ async def chatBotMainThread():
     bot.start()
 
 
-# Starting all threads
+# Starting threads
 loop = asyncio.get_event_loop()
 loop.create_task(chatBotMainThread())
 loop.run_forever()
